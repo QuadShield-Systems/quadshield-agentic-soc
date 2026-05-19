@@ -11,9 +11,11 @@ Autonomous mitigation of SSH Brute Force attacks using Agentic AI within a 20-da
 
 ## 🗄️ Database Schema (Supabase)
 **Table Name:** `security_logs`
-- Columns: `id`, `timestamp`, `source_ip`, `event_type`, `severity`, `status`.
+- **Columns:** `id`, `timestamp`, `source_ip`, `event_type`, `severity`, `status`, `raw_log_data`
 
-## 🚀 Constraints
-- Use strictly Gemini 1.5 Flash for reasoning.
-- Clean-Slate AI policy: Reset chats if logic diverges.
-- Repository Folder: `quadshield-soc-prototype`
+## 🚀 Constraints & Security Architecture
+- **Database Security:** Row Level Security (RLS) is **ENABLED**.
+- **Database Policies:** Public `INSERT` and public `SELECT` policies are active via the `anon` key.
+- **AI Engine:** Use strictly Gemini 1.5 Flash for reasoning.
+- **AI Chat Strategy:** Clean-Slate AI policy (Reset chats if logic diverges).
+- **Repository Folder:** `quadshield-agentic-soc`
