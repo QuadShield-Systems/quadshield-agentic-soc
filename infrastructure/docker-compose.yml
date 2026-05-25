@@ -1,0 +1,25 @@
+services:
+  ubuntu_victim:
+    build: 
+      context: .
+      dockerfile: victim.DockerFile
+    container_name: ubuntu_victim
+    networks:
+      - quadshield_net
+    volumes:
+      # Exposes container logs safely to your VS Code workspace
+      - ./shared_logs:/var/log
+
+  kali_attacker:
+    build: 
+      context: .
+      dockerfile: attacker.DockerFile
+    container_name: kali_attacker
+    networks:
+      - quadshield_net
+    depends_on:
+      - ubuntu_victim
+
+networks:
+  quadshield_net:
+    driver: bridge
