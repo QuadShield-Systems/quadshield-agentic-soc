@@ -18,7 +18,7 @@ print("KAFKA_TOPIC =", os.getenv("KAFKA_TOPIC"))
 
 KAFKA_BROKER = os.getenv(
     "KAFKA_BROKER",
-    "localhost:9092"
+    "localhost:29092"
 )
 
 KAFKA_TOPIC = os.getenv(
@@ -69,7 +69,9 @@ def generate_ssh_bruteforce():
 
         "severity": "HIGH",
 
-        "attack_type": "SSH_BRUTE_FORCE"
+        "attack_type": "SSH_BRUTE_FORCE",
+        
+        "status": "DETECTED"
     }
 
 # ============================================
@@ -94,7 +96,9 @@ def generate_sql_injection():
 
         "severity": "CRITICAL",
 
-        "attack_type": "SQL_INJECTION"
+        "attack_type": "SQL_INJECTION",
+        
+        "status": "DETECTED"
     }
     
 # ============================================
