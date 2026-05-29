@@ -139,7 +139,7 @@ while True:
         print(json.dumps(log, indent=4))
 
         # WAIT BEFORE NEXT EVENT
-        time.sleep(3)
+        time.sleep(15)
 
     except KeyboardInterrupt:
 
