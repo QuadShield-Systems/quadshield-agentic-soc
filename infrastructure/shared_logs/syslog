@@ -28,3 +28,18 @@
 2026-05-29T15:29:07.636503+00:00 57edef4860e0 rsyslogd: rsyslogd's groupid changed to 101
 2026-05-29T15:29:07.636506+00:00 57edef4860e0 rsyslogd: rsyslogd's userid changed to 100
 2026-05-29T15:29:07.636509+00:00 57edef4860e0 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-02T12:56:30.096299+00:00 28f14ff3b596 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-02T12:56:30.096349+00:00 28f14ff3b596 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-02T12:56:30.096353+00:00 28f14ff3b596 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-02T12:56:30.096356+00:00 28f14ff3b596 rsyslogd: rsyslogd's userid changed to 100
+2026-06-02T12:56:30.096359+00:00 28f14ff3b596 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-02T12:57:18.575350+00:00 90473b90ff70 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-02T12:57:18.575417+00:00 90473b90ff70 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-02T12:57:18.575422+00:00 90473b90ff70 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-02T12:57:18.575427+00:00 90473b90ff70 rsyslogd: rsyslogd's userid changed to 100
+2026-06-02T12:57:18.575432+00:00 90473b90ff70 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-02T13:10:08.588950+00:00 902fc9e5f916 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-02T13:10:08.588984+00:00 902fc9e5f916 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-02T13:10:08.589012+00:00 902fc9e5f916 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-02T13:10:08.589019+00:00 902fc9e5f916 rsyslogd: rsyslogd's userid changed to 100
+2026-06-02T13:10:08.589022+00:00 902fc9e5f916 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
