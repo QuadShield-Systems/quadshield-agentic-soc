@@ -54,23 +54,16 @@ except NoBrokersAvailable:
 def generate_ssh_bruteforce():
 
     return {
-
         "timestamp": datetime.now().isoformat(),
-
         "source_ip": random.choice([
-            "192.168.1.105",
-            "10.0.0.23",
-            "172.16.0.8"
+            "185.220.101.5",  # Tor Proxy Node
+            "172.16.0.8",     # Rogue Internal Node
+            "45.33.22.11"     # Attacker Cloud VPS
         ]),
-
-        "event": "Failed password for admin",
-
+        "event": "Failed password for admin root profile access attempt",
         "failed_attempts": random.randint(5, 15),
-
         "severity": "HIGH",
-
         "attack_type": "SSH_BRUTE_FORCE",
-        
         "status": "DETECTED"
     }
 
@@ -81,50 +74,65 @@ def generate_ssh_bruteforce():
 def generate_sql_injection():
 
     return {
-
         "timestamp": datetime.now().isoformat(),
-
         "source_ip": random.choice([
             "45.67.12.90",
             "103.21.244.1",
-            "185.220.101.5"
+            "192.168.45.12"  # Local Infiltrator Web App Attacker
         ]),
-
-        "event": "UNION SELECT attack detected",
-
+        "event": "UNION SELECT injection attempt on API endpoint auth parameter: id=1' OR '1'='1'--",
         "failed_attempts": random.randint(1, 3),
-
         "severity": "CRITICAL",
-
-        "attack_type": "SQL_INJECTION",
-        
+        "attack_type": "SQL_INJECTION",  # Restored pure string
         "status": "DETECTED"
     }
     
 # ============================================
+# DENIAL OF SERVICE (DDOS) EVENT
+# ============================================
+
+def generate_ddos_syn_flood():
+
+    return {
+        "timestamp": datetime.now().isoformat(),
+        "source_ip": random.choice([
+            "88.198.5.2",     # Botnet Controller Node
+            "109.201.154.3",  # High-Volume Malicious Spammer
+            "203.0.113.55"    # External Stresser Tool Node
+        ]),
+        "event": "SYN FLOOD Network Anomaly Detected - 7500 packets/sec overwhelming kernel interfaces",
+        "failed_attempts": random.randint(100, 500),
+        "severity": "CRITICAL",
+        "attack_type": "DDOS_SYN_FLOOD",  # Restored pure string
+        "status": "DETECTED"
+    }
+
+# ============================================
 # START STREAMING EVENTS
 # ============================================
 
-print("\n[+] Streaming mock security logs...\n")
+print("\n[+] Streaming multi-vector mock security logs...\n")
+print(f"🎯 Branch: feature/multi-vector-attacks | Pacing: 30 Seconds Delay\n")
 
 while True:
 
     try:
 
+        # Balance across all three threat profiles seamlessly
         attack_type = random.choice([
             "ssh",
-            "sql"
+            "sql",
+            "ddos"
         ])
 
         if attack_type == "ssh":
-
             log = generate_ssh_bruteforce()
-
-        else:
-
+        elif attack_type == "sql":
             log = generate_sql_injection()
+        else:
+            log = generate_ddos_syn_flood()
 
-        # SEND TO KAFKA
+        # SEND TO KAFKA BROKER CLUSTER
         producer.send(
             KAFKA_TOPIC,
             value=log
@@ -133,13 +141,13 @@ while True:
         producer.flush()
 
         print("\n====================================")
-        print("[+] Event Sent To Kafka")
+        print(f"[🚨 ALERT] Threat Telemetry Ingested into Pipeline")
         print("====================================")
 
         print(json.dumps(log, indent=4))
 
-        # WAIT BEFORE NEXT EVENT
-        time.sleep(15)
+        # 30-second presentation pacing loop delay
+        time.sleep(30)
 
     except KeyboardInterrupt:
 
@@ -150,4 +158,4 @@ while True:
 
         print(f"\n[-] Error: {str(error)}")
 
-        time.sleep(5)
+        time.sleep(30)

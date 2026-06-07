@@ -28,3 +28,53 @@
 2026-05-29T15:29:07.636503+00:00 57edef4860e0 rsyslogd: rsyslogd's groupid changed to 101
 2026-05-29T15:29:07.636506+00:00 57edef4860e0 rsyslogd: rsyslogd's userid changed to 100
 2026-05-29T15:29:07.636509+00:00 57edef4860e0 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-02T12:56:30.096299+00:00 28f14ff3b596 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-02T12:56:30.096349+00:00 28f14ff3b596 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-02T12:56:30.096353+00:00 28f14ff3b596 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-02T12:56:30.096356+00:00 28f14ff3b596 rsyslogd: rsyslogd's userid changed to 100
+2026-06-02T12:56:30.096359+00:00 28f14ff3b596 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-02T12:57:18.575350+00:00 90473b90ff70 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-02T12:57:18.575417+00:00 90473b90ff70 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-02T12:57:18.575422+00:00 90473b90ff70 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-02T12:57:18.575427+00:00 90473b90ff70 rsyslogd: rsyslogd's userid changed to 100
+2026-06-02T12:57:18.575432+00:00 90473b90ff70 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-02T13:10:08.588950+00:00 902fc9e5f916 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-02T13:10:08.588984+00:00 902fc9e5f916 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-02T13:10:08.589012+00:00 902fc9e5f916 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-02T13:10:08.589019+00:00 902fc9e5f916 rsyslogd: rsyslogd's userid changed to 100
+2026-06-02T13:10:08.589022+00:00 902fc9e5f916 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-03T02:53:33.243244+00:00 ba99da607681 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-03T02:53:33.243274+00:00 ba99da607681 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-03T02:53:33.243277+00:00 ba99da607681 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-03T02:53:33.243279+00:00 ba99da607681 rsyslogd: rsyslogd's userid changed to 100
+2026-06-03T02:53:33.243282+00:00 ba99da607681 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="9" x-info="https://www.rsyslog.com"] start
+2026-06-03T03:10:44.571930+00:00 43f82d754e4b rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-03T03:10:44.572018+00:00 43f82d754e4b rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-03T03:10:44.572025+00:00 43f82d754e4b rsyslogd: rsyslogd's groupid changed to 101
+2026-06-03T03:10:44.572030+00:00 43f82d754e4b rsyslogd: rsyslogd's userid changed to 100
+2026-06-03T03:10:44.572035+00:00 43f82d754e4b rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-04T04:40:31.819829+00:00 7f5eac5cc127 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-04T04:40:31.819866+00:00 7f5eac5cc127 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-04T04:40:31.819869+00:00 7f5eac5cc127 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-04T04:40:31.819872+00:00 7f5eac5cc127 rsyslogd: rsyslogd's userid changed to 100
+2026-06-04T04:40:31.819874+00:00 7f5eac5cc127 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-07T10:02:26.923139+00:00 b33243deb654 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-07T10:02:26.923178+00:00 b33243deb654 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-07T10:02:26.923180+00:00 b33243deb654 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-07T10:02:26.923183+00:00 b33243deb654 rsyslogd: rsyslogd's userid changed to 100
+2026-06-07T10:02:26.923186+00:00 b33243deb654 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-07T10:15:47.109002+00:00 bcf82a297135 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-07T10:15:47.109088+00:00 bcf82a297135 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-07T10:15:47.109091+00:00 bcf82a297135 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-07T10:15:47.109094+00:00 bcf82a297135 rsyslogd: rsyslogd's userid changed to 100
+2026-06-07T10:15:47.109096+00:00 bcf82a297135 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-07T10:40:12.683676+00:00 2d9ed57b925a rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-07T10:40:12.683719+00:00 2d9ed57b925a rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-07T10:40:12.683721+00:00 2d9ed57b925a rsyslogd: rsyslogd's groupid changed to 101
+2026-06-07T10:40:12.683724+00:00 2d9ed57b925a rsyslogd: rsyslogd's userid changed to 100
+2026-06-07T10:40:12.683727+00:00 2d9ed57b925a rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+2026-06-07T10:43:07.879956+00:00 a96f89828873 rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+2026-06-07T10:43:07.880014+00:00 a96f89828873 rsyslogd: activation of module imklog failed [v8.2512.0 try https://www.rsyslog.com/e/2145 ]
+2026-06-07T10:43:07.880017+00:00 a96f89828873 rsyslogd: rsyslogd's groupid changed to 101
+2026-06-07T10:43:07.880020+00:00 a96f89828873 rsyslogd: rsyslogd's userid changed to 100
+2026-06-07T10:43:07.880022+00:00 a96f89828873 rsyslogd: [origin software="rsyslogd" swVersion="8.2512.0" x-pid="9" x-info="https://www.rsyslog.com"] start
